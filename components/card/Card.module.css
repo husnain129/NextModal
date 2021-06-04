@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    margin: 0;
+}
+
+.card {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.card_img {
+    position: relative;
+}
+
+.img {
+    object-fit: contain;
+    border-radius: 12px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.img_list {
+    position: absolute;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 30px;
+    gap: 15%;
+    width: 100%;
+    height: 0px;
+    -webkit-transition: all 3s ease;
+    -moz-transition: all 3s ease;
+    transition: all 3s ease;
+    transition-duration: 2s;
+    transition-property: height;
+    background-image: linear-gradient(to right, rgba(2, 0, 36, 0.185) 0%, rgba(128, 122, 115, 0.356) calc(100% - 530px), rgba(101, 101, 105, 0.322) calc(100% - 530px), rgba(170, 169, 197, 0.452) 100%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+.icons {
+    /* width: 20px; */
+    /* height: 20px; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* background-color: #E1E1E3; */
+    /* border-radius: 5px; */
+    color: #6B6A77;
+    user-select: none;
+}
+
+
+.img_list>p {
+    color: #fff;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profile {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.like {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card_img:hover .img_list {
+    display: flex;
+    height: 45px;
+}
