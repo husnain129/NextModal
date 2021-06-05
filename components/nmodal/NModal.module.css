@@ -66,8 +66,8 @@
 }
 
 .r_profile_btn__x:hover {
-    background-color: black;
-    color: white;
+    color: rgb(36, 33, 33);
+    border: 1px solid black;
 }
 
 .r_profile_btn__y:hover {
