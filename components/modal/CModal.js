@@ -1,9 +1,8 @@
 import Image from 'next/image';
 import React from 'react';
 import { IconContext } from 'react-icons';
-import { AiFillInfoCircle } from 'react-icons/ai';
 import { IoMdShareAlt } from 'react-icons/io';
-import { RiHeartFill, RiMessage3Fill } from 'react-icons/ri';
+import { RiHeartFill } from 'react-icons/ri';
 import s from './CModal.module.css';
 
 function CModal({ url }) {
@@ -12,21 +11,21 @@ function CModal({ url }) {
 			<div className={s.position}>
 				<div className={s.v_list}>
 					<Image src="/1.jpg" width={40} height={40} className={s.avatar} />
-					<div className={s.icon_container}>
+					{/* <div className={s.icon_container}>
 						<IconContext.Provider value={{ color: 'black' }}>
 							<RiMessage3Fill size={22} />
 						</IconContext.Provider>
-					</div>
+					</div> */}
 					<div className={s.icon_container}>
 						<IconContext.Provider value={{ color: 'black' }}>
 							<IoMdShareAlt size={22} />
 						</IconContext.Provider>
 					</div>
-					<div className={s.icon_container}>
+					{/* <div className={s.icon_container}>
 						<IconContext.Provider value={{ color: 'black' }}>
 							<AiFillInfoCircle size={22} />
 						</IconContext.Provider>
-					</div>
+					</div> */}
 					<div className={s.icon_container}>
 						<IconContext.Provider value={{ color: 'black' }}>
 							<RiHeartFill size={22} />

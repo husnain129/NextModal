@@ -41,6 +41,14 @@
     cursor: pointer;
 }
 
+.body_container {
+    width: 668px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .p_detail {
     margin: 25px;
     display: flex;
@@ -82,12 +90,4 @@
     justify-content: center;
     gap: 1vh;
     margin-top: 5vh;
-}
-
-.body_container {
-    width: 668px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }

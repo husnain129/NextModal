@@ -1,8 +1,8 @@
-import CModal from '../components/modal/CModal';
+import NModal from '../components/nmodal/NModal';
 function CardDetail() {
 	return (
 		<div style={{ margin: '5vh auto' }}>
-			<CModal />
+			<NModal />
 		</div>
 	);
 }

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 import Modal from 'react-modal';
 import Card from '../card/Card';
-import CModal from '../modal/CModal';
+import NModal from '../nmodal/NModal';
 import s from './Layout.module.css';
 Modal.setAppElement('#__next');
 
@@ -25,8 +25,11 @@ function Layout() {
 			transform: 'translate(-50%, -50%)',
 			width: '80vw',
 			height: '80vh',
-			outline: 'none'
-			// border: 'none'
+			outline: 'none',
+			border: 'none',
+			borderRadius: '5px',
+			scrollBar: 'none',
+			boxShadow: '0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)'
 		}
 	};
 	return (
@@ -80,7 +83,7 @@ function Layout() {
 					setModal(false);
 				}}
 			>
-				<CModal url={url} />
+				<NModal url={url} />
 			</Modal>
 		</div>
 	);
