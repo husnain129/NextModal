@@ -26,7 +26,7 @@ function NModal() {
 
 			<div className={s.body_container}>
 				<div className={s.bottom_img}>
-					<Image src="/2.jpg" width={668} height={476} />
+					<img src="/2.jpg" alt="project" className={s.bottom_img__i} />
 					<div className={s.bottom_img__list}>
 						<p style={{ color: '#fff', fontWeight: '400', fontSize: '15pt' }}>Graphics vector with AI</p>
 						<div className={s.icon_container}>
