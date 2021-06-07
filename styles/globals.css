@@ -24,4 +24,5 @@ p {
   --font-size-light: 10pt;
   --font-size-normal: 12pt;
   --font-size-heading: 18pt;
+  --font-weight-heading: 700;
 }
