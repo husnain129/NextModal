@@ -1,9 +1,11 @@
 import Image from 'next/image';
 import { IconContext } from 'react-icons';
-import { IoLogoGithub, IoLogoTwitter, IoMdShareAlt } from 'react-icons/io';
+import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io';
 import { RiFacebookLine, RiHeartFill } from 'react-icons/ri';
+import ImageSlider from '../imageSlider/ImageSlider';
 import MCard from '../modalCard/MCard';
 import s from './NModal.module.css';
+
 function NModal() {
 	return (
 		<div className={s.container}>
@@ -14,7 +16,8 @@ function NModal() {
 				</div>
 				<div className={s.r_profile}>
 					<div className={`${s.r_profile_btn} ${s.r_profile_btn__x}`}>
-						<p className={s.r_profile_btn__value}>View Detail</p>
+						<RiHeartFill size={22} />
+						<p>Like</p>
 					</div>
 					<div className={`${s.r_profile_btn} ${s.r_profile_btn__y}`}>
 						<p className={s.r_profile_btn__value}>View Profile</p>
@@ -26,25 +29,10 @@ function NModal() {
 
 			<div className={s.body_container}>
 				<div className={s.bottom_img}>
-					<img src="/2.jpg" alt="project" className={s.bottom_img__i} />
-					<div className={s.bottom_img__list}>
-						<p style={{ color: '#fff', fontWeight: '400', fontSize: '15pt' }}>Graphics vector with AI</p>
-						<div className={s.icon_container}>
-							<div className={s.icon_box}>
-								<IconContext.Provider value={{ color: 'white' }}>
-									<IoMdShareAlt size={22} />
-								</IconContext.Provider>
-							</div>
-							<div className={s.icon_box}>
-								<IconContext.Provider value={{ color: 'white' }}>
-									<RiHeartFill size={22} />
-								</IconContext.Provider>
-							</div>
-						</div>
-					</div>
+					{/* <img src="/2.jpg" alt="project" className={s.bottom_img__i} /> */}
+					<ImageSlider />
 				</div>
 
-				{/* <div className={s.p_detail}> */}
 				<div className={s.p_detail__text}>
 					<p>
 						Are you into the food industry and planning to take your venture to the next level with an
@@ -78,7 +66,6 @@ function NModal() {
 						</div>
 					</div>
 				</div>
-				{/* </div> */}
 			</div>
 			<div className={s.projects}>
 				<div className={s.line} />

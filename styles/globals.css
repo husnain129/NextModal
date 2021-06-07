@@ -18,3 +18,10 @@ a {
 p {
   margin: 0;
 }
+
+:root {
+  --color-border: rgba(177, 170, 170, 0.575);
+  --font-size-light: 10pt;
+  --font-size-normal: 12pt;
+  --font-size-heading: 18pt;
+}
