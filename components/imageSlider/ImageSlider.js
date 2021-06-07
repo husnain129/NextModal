@@ -5,9 +5,6 @@ function ImageSlider() {
 	const [lmargin, setLmargin] = useState('0px');
 
 	return (
-		// <div>
-		// 	<img src="/2.jpg" alt="project" className={s.bottom_img__i} />
-		// </div>
 		<div className={s.container}>
 			<div className={s.slider}>
 				<div className={s.slides}>

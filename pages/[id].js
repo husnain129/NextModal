@@ -1,8 +1,10 @@
+import Footer from '../components/Footer/Footer';
 import NModal from '../components/nmodal/NModal';
 function CardDetail() {
 	return (
-		<div style={{ margin: '5vh auto' }}>
+		<div style={{ marginTop: '5vh' }}>
 			<NModal />
+			<Footer />
 		</div>
 	);
 }

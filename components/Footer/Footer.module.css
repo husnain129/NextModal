@@ -1,0 +1,146 @@
+.footer {
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+
+  padding: 0.4rem 2rem;
+  padding-top: 1rem;
+  background-color: rgb(234, 238, 239);
+  border-top: 1px solid rgb(231, 231, 231);
+
+  margin-top: 5vh;
+
+  min-height: 100vh;
+
+  flex-direction: column;
+  /* align-items: center; */
+  /* box-shadow: 0px 0px 5px 2px #0002; */
+}
+
+.footer.white {
+  background-color: #fff;
+}
+
+.topLayer {
+  /* flex: 0.65; */
+  display: flex;
+
+  padding: 0rem 2rem;
+  /* background: #f002; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bottomLayer {
+  flex: 0.35;
+  padding: 1rem 2rem;
+  /* background: #0f02; */
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+  /* background-color: #00f2; */
+  flex: 1;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding: 1rem 0;
+  padding-left: 2rem;
+}
+
+.colHeading {
+  font-weight: 600;
+  font-size: 13pt;
+  color: #2c5a49;
+}
+
+.colList {
+  list-style: none;
+  padding: 0;
+}
+
+.colList>li {
+  color: #2c5a49;
+  margin: 0.55rem 0rem;
+  font-size: 11pt;
+}
+
+.row {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .8rem;
+  /* background: #f001; */
+}
+
+.footerImg {
+  height: 120px;
+}
+
+.madeWith {
+  margin-top: .5rem;
+  color: #393939;
+  font-size: 13pt;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.copyright {
+  margin: 1rem 0;
+  color: rgb(112, 116, 117);
+  font-weight: 500;
+  font-size: 11pt;
+}
+
+.iconsList {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.followIcon {
+  color: #2c5a49;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  border-radius: 50%;
+  background: white;
+  padding: 5px;
+  /* box-shadow: 0px 0px 2px 2px #aaa2; */
+  transition: transform 0.2s ease-in;
+}
+
+.followIcon:hover {
+  transform: scale(1.1);
+}
+
+.trademark {
+  font-size: 10pt;
+  color: #333a;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerImg {
+    height: 80px;
+  }
+
+  .footer {
+    padding: 0.4rem .4rem;
+  }
+
+  .col {
+    margin: 0;
+  }
+
+  .topLayer {
+    padding: 0rem 0.3rem;
+  }
+}
