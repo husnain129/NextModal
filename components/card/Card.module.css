@@ -108,7 +108,7 @@
     user-select: none;
 }
 
-.detail {
+/* .detail {
     display: flex;
     width: 98%;
     align-items: center;
@@ -159,7 +159,7 @@
 
 .detail_btn:hover::before {
     width: 100%;
-}
+} */
 
 /* /#E7E7E7 */
 /* 
