@@ -29,7 +29,6 @@ function NModal() {
 
 			<div className={s.body_container}>
 				<div className={s.bottom_img}>
-					{/* <img src="/2.jpg" alt="project" className={s.bottom_img__i} /> */}
 					<ImageSlider />
 				</div>
 
