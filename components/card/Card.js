@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { SkelCard } from '../skeleton/ImageSkeleton';
 import s from './Card.module.css';
 function Card({ onClick, img_src }) {
 	return (
@@ -6,7 +7,7 @@ function Card({ onClick, img_src }) {
 			<div className={s.card}>
 				<div className={s.card_position}>
 					<div className={s.card_img}>
-						<img src={img_src} alt="dribble" className={s.img} />
+						{<img src={img_src} alt="dribble" className={s.img} /> || <SkelCard count={10} />}
 					</div>
 					<div className={s.card_checkout}>
 						<Link href={`/profile`} as={`/profile=1`}>

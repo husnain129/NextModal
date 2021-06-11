@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+import { SkelModal } from '../skeleton/ImageSkeleton';
 import s from './ImageSlider.module.css';
-
 function ImageSlider() {
 	const [lmargin, setLmargin] = useState('0px');
 
@@ -15,10 +15,12 @@ function ImageSlider() {
 					{/* radio button end */}
 
 					<div className={s.slide} style={{ marginLeft: lmargin }}>
-						<img
-							src="https://cdn.dribbble.com/users/1994279/screenshots/15769705/media/5d3f9857c7bd176478bff4fc72cc18b3.png"
-							style={{ width: '100%' }}
-						/>
+						{(
+							<img
+								src="https://cdn.dribbble.com/users/1994279/screenshots/15769705/media/5d3f9857c7bd176478bff4fc72cc18b3.png"
+								style={{ width: '100%' }}
+							/>
+						) || <SkelModal />}
 					</div>
 
 					{/* ////////////////////// */}

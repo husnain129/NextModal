@@ -4,14 +4,14 @@ import { IoLogoGithub, IoLogoTwitter } from 'react-icons/io';
 import { RiFacebookLine, RiHeartFill } from 'react-icons/ri';
 import ImageSlider from '../imageSlider/ImageSlider';
 import MCard from '../modalCard/MCard';
+import { SkelAvatar } from '../skeleton/ImageSkeleton';
 import s from './NModal.module.css';
-
 function NModal() {
 	return (
 		<div className={s.container}>
 			<div className={s.profile}>
 				<div className={s.l_profile}>
-					<Image src="/profile.png" width={90} height={90} className={s.avatar} />
+					{<Image src="/profile.png" width={90} height={90} className={s.avatar} /> || <SkelAvatar />}
 					<p className={s.l_profile__title}>Muhammad Hunsain</p>
 				</div>
 				<div className={s.r_profile}>
